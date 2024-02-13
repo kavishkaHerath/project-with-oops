@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         final byte MONTHS_IN_YEAR = 12;
         final byte PERCENT = 100;
-        int principal = 0;
+        int principal;
         float annualInterestRate = 0;
         byte years = 0;
 
