@@ -19,10 +19,10 @@ public class Main {
         byte years = scanner.nextByte();
         int noOfPeriod = years * MONTHS_IN_YEAR;
 
-        double mortgage = principal *
-                (monthlyInterest * Math.pow((1+monthlyInterest), noOfPeriod)
-                        / (Math.pow((1+monthlyInterest), noOfPeriod) - 1));
-        String result = NumberFormat.getCurrencyInstance().format(mortgage);
-        System.out.println("Mortgage: " + result);
+//        double mortgage = principal *
+//                (monthlyInterest * Math.pow((1+monthlyInterest), noOfPeriod)
+//                        / (Math.pow((1+monthlyInterest), noOfPeriod) - 1));
+//        String result = NumberFormat.getCurrencyInstance().format(mortgage);
+//        System.out.println("Mortgage: " + result);
     }
 }
