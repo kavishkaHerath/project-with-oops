@@ -12,11 +12,20 @@ public class Main {
 
         double mortgage = calculateMortgage(principal, annualInterestRate, years);
 
+        printMortgage(mortgage);
+
+        printPaymentSchedule(years, principal, annualInterestRate);
+    }
+
+    private static void printMortgage(double mortgage) {
         String result = NumberFormat.getCurrencyInstance().format(mortgage);
         System.out.println();
         System.out.println("MORTGAGE");
         System.out.println("--------");
         System.out.println("Mortgage: " + result);
+    }
+
+    private static void printPaymentSchedule(byte years, int principal, float annualInterestRate) {
         System.out.println();
         System.out.println("PAYMENT SCHEDULE");
         System.out.println("----------------");
@@ -25,6 +34,7 @@ public class Main {
             System.out.println(NumberFormat.getCurrencyInstance().format(balance));
         }
     }
+
     public static double readNumber(String prompt, double min, double max){
         Scanner scanner = new Scanner(System.in);
         double value;
