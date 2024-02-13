@@ -6,8 +6,8 @@ public class Main {
         final byte MONTHS_IN_YEAR = 12;
         final byte PERCENT = 100;
         int principal;
-        float annualInterestRate = 0;
-        byte years = 0;
+        float annualInterestRate;
+        byte years;
 
         Scanner scanner = new Scanner(System.in);
 
