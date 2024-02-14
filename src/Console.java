@@ -1,8 +1,11 @@
 import java.util.Scanner;
 
 public class Console {
+    private static final Scanner scanner = new Scanner(System.in);
+    public static double readNumber(String prompt){
+        return scanner.nextDouble();
+    }
     public static double readNumber(String prompt, double min, double max) {
-        Scanner scanner = new Scanner(System.in);
         double value;
         while (true) {
             System.out.print(prompt);
